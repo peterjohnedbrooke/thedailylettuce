@@ -10,9 +10,9 @@ import {
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { mapArticleToCardProps } from '@/app/utils/mappers/article.mapper';
 import Link from 'next/link';
-import Card from '@/app/components/card/card';
+import Card from '@/components/card/card';
 import { formatDate } from '@/app/utils/formatDate';
-import Sharing from '@/app/components/sharing/sharing';
+import Sharing from '@/components/sharing/sharing';
 
 const client = createContentClient();
 export async function generateStaticParams() {

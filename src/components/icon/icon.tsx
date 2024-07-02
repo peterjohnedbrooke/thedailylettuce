@@ -1,10 +1,9 @@
 import React from 'react';
-
 import { icons } from './icon.dictionary';
 
 export type IconProps = {
   className?: string;
-  icon: keyof typeof icons;
+  icon?: keyof typeof icons;
   size?: number | undefined;
 };
 

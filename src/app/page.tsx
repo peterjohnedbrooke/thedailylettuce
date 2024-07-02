@@ -6,7 +6,7 @@ import {
 } from './utils/contentful';
 import Link from 'next/link';
 import Layout from './layout/layout';
-import Card from './components/card/card';
+import Card from '../components/card/card';
 import './home-page.css';
 import { mapArticleToCardProps } from './utils/mappers/article.mapper';
 
