@@ -38,13 +38,17 @@
   }
 }
 
-.home__card-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding-medium);
-  margin-top: var(--padding-xsmall);
+@media (max-width: 900px) {
+  .home__card-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+    margin-top: var(--padding-xsmall);
+  }
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  .home__card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--padding-medium);
