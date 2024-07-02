@@ -5,14 +5,14 @@ import '../../app/globals.css';
 import Footer from '../components/footer/footer';
 
 const Layout = ({ children }: any) => {
-  const childrenWithProps = React.Children.map(children, (child) =>
-    React.cloneElement(child),
-  );
+  // const childrenWithProps = React.Children.map(children, (child) =>
+  //   React.cloneElement(child),
+  // );
 
   return (
     <div>
       <Header />
-      <main>{childrenWithProps}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
