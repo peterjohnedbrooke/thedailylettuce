@@ -1,0 +1,35 @@
+.sharing-container {
+}
+
+.sharing-container h5 {
+  margin-bottom: var(--padding-medium);
+}
+
+.sharing-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sharing-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sharing-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.sharing-buttons button Icon {
+  fill: white;
+}

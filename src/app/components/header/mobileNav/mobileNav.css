@@ -1,0 +1,14 @@
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+  padding: 100px;
+  list-style: none;
+}
+
+.mobile-nav__link {
+  font-size: 48px;
+  text-decoration: none;
+  color: black;
+  font-style: oblique;
+}

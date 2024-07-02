@@ -1,0 +1,59 @@
+.about__container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about__team-title {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.about__team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--padding-medium);
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about__team-member {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-small);
+}
+
+.member__image {
+  height: 300px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member__name {
+}
+
+.member__role {
+  color: brown;
+  font-size: 0.7rem;
+}
+
+.member__bio {
+  line-height: 1.6;
+}

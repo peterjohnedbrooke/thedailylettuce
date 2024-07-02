@@ -1,33 +1,148 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-color: 0, 0, 0;
+  --background-color: white;
+
+  /* Padding Variables */
+  --padding-xsmall: 0.25rem;
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 2rem;
+  --padding-xlarge: 4rem;
+  --padding-xxlarge: 8rem;
+
+  /* Color Variables */
+  --color-background: #f5f5f5;
+  --color-text: black;
+
+  /* Max Width Variable */
+  --max-width-container: 1200px;
+
+  /* Categories */
+  --category-sports: #621fff;
+  --category-entertainment: #9c27b0;
+  --category-technology: #3f51b5;
+  --category-culture: #ff5722;
+  --category-business: #009688;
+  --category-health: #1a535c;
+  --category-science: #afe3c0;
+  --category-general: #795548;
+  --category-politics: #514663;
+  --category-world: #4caf50;
+  --category-uk: #2196f3;
+
+  /* Theme Colors */
+  --color-crimson: #c30e2d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.light {
+  --foreground-color: 0, 0, 0;
+  --background-color: white;
+
+  color: rgb(var(--foreground-color));
+  background: var(--background-color);
+}
+
+.smashed {
+  --foreground-color: blueviolet;
+  --background-color: black;
+
+  color: rgb(var(--foreground-color));
+  background: var(--background-color);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  color: var(--foreground-color);
+  background: var(--background-color);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+main {
+  margin: 0 auto;
+  padding: 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a {
+    margin: 0;
+    padding: 0;
+    color: var(--foreground-color);
+  }
+
+  p,
+  span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 5px solid #ccc;
+  color: #666;
+  font-style: italic;
+}
+
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+h1,
+.h1 {
+  font-size: 2rem; /* 32px */
+}
+
+h2,
+.h2 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h5,
+.h5 {
+  font-size: 1rem; /* 16px */
+}
+
+p,
+.p {
+  font-size: 1rem; /* 14px */
+}
+
+/* Breakpoints for larger devices */
+@media (min-width: 768px) {
+  html {
+    font-size: 18px; /* 1rem = 18px */
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px; /* 1rem = 20px */
+  }
+}
+
+.wrapper {
+  max-width: var(--max-width-container);
+  margin: var(--padding-small) auto 0 auto;
+  padding: 0 var(--padding-medium);
+
+  @media (min-width: 900px) {
+    margin: var(--padding-medium) auto 0 auto;
+    padding: 0 var(--padding-large);
   }
 }

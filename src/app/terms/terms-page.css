@@ -1,0 +1,35 @@
+.terms__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.terms__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.terms__section {
+  margin-bottom: 20px;
+}
+
+.terms__section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.terms__section p,
+.terms__section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.terms__section ul {
+  padding-left: 20px;
+}
+
+.terms__section ul li {
+  margin-bottom: 5px;
+}

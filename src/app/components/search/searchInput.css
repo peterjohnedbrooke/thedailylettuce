@@ -1,0 +1,25 @@
+.header__search-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.header__search {
+  display: none;
+  background-color: black;
+  color: rgb(var(--foreground-color));
+  border: none;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-weight: 300;
+}
+
+.header__search::placeholder {
+  color: rgb(var(--foreground-color));
+}
+
+.header__search-container.expanded .header__search {
+  display: block;
+}

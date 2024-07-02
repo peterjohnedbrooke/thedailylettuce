@@ -1,0 +1,106 @@
+.home__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+}
+
+.home__article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+  margin-bottom: var(--padding-medium);
+}
+
+.home__title-link {
+  text-decoration: none;
+}
+
+.home__trending-news {
+  padding-inline: var(--padding-medium);
+  background-color: #f5f5f5;
+  border-left: 4px solid #c30e2d;
+  color: black;
+  margin-left: calc(-1 * var(--padding-medium));
+  margin-right: calc(-1 * var(--padding-medium));
+
+  @media (min-width: 900px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home__trending-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-medium);
+    list-style-type: none;
+    margin: 0;
+    padding: var(--padding-medium) 0;
+  }
+}
+
+.home__card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+  margin-top: var(--padding-xsmall);
+
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-medium);
+    margin-top: var(--padding-small);
+  }
+}
+
+.home__featured-news-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-medium);
+  }
+}
+
+.home__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--padding-medium);
+}
+
+.home__title {
+  font-style: oblique;
+}
+
+.home__title-line {
+  flex-grow: 1;
+  height: 2px;
+  background: rgb(var(--foreground-color));
+  margin: var(--padding-medium);
+}
+
+.home__card-link,
+.home__featured-link {
+  text-decoration: none;
+}
+
+.home__featured-news {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home__hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: var(--padding-medium);
+  }
+}
