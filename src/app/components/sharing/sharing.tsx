@@ -2,11 +2,12 @@
 import React from 'react';
 import Icon from '../icon/icon';
 import './sharing.css';
+import { icons } from '../icon/icon.dictionary';
 
 type SocialSharingProps = {
   options?: {
     title: string;
-    icon: JSX.Element | string;
+    icon: keyof typeof icons;
     url: string;
   }[];
 };
@@ -45,7 +46,7 @@ const Sharing = () => {
               )
             }
           >
-            <Icon icon={option.icon} size={24} />
+            <Icon icon={option.icon as keyof typeof icons} size={24} />
           </button>
         ))}
       </div>
