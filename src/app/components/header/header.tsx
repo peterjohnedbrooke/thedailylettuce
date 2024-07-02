@@ -8,7 +8,7 @@ import Hamburger from 'hamburger-react';
 import MobileNav from './mobileNav/mobileNav';
 
 type HeaderProps = {
-  toggleTheme: () => void;
+  toggleTheme?: () => void;
   theme?: string;
 };
 

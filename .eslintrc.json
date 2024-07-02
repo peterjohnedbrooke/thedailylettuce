@@ -2,10 +2,7 @@
 //   "extends": "next/core-web-vitals"
 // }
 {
-  "extends": ["next/babel","next/core-web-vitals"]
-},
-{
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended", "next/babel","next/core-web-vitals"],
   "plugins": [
     "prettier"
   ],
