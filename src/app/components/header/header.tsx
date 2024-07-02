@@ -9,7 +9,7 @@ import MobileNav from './mobileNav/mobileNav';
 
 type HeaderProps = {
   toggleTheme: () => void;
-  theme: string;
+  theme?: string;
 };
 
 const meaCulpa = Mea_Culpa({ weight: '400', subsets: ['latin'] });
@@ -38,7 +38,7 @@ const Header = ({ toggleTheme, theme }: HeaderProps) => {
   }, []);
 
   return (
-    <header className={`header ${theme}`}>
+    <header className={`header`}>
       <div className="header__container">
         <div className="header__top-container">
           <div className="header__logo-container">
