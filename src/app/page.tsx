@@ -100,7 +100,7 @@ async function Home() {
                 )}
               </div>
             )}
-            {mappedPolitics && mappedPolitics.length === 4 && (
+            {mappedPolitics && mappedPolitics.length > 0 && (
               <div className="home__politics-news">
                 <div className="home__title-container">
                   <Link href="/category/politics" className="home__title-link">
@@ -124,7 +124,7 @@ async function Home() {
                 </div>
               </div>
             )}
-            {mappedBusiness && mappedBusiness.length === 4 && (
+            {mappedBusiness && mappedBusiness.length > 0 && (
               <div className="home__business-news">
                 <div className="home__title-container">
                   <Link href="/category/business" className="home__title-link">
@@ -148,7 +148,7 @@ async function Home() {
                 </div>
               </div>
             )}
-            {mappedSports && mappedSports.length === 4 && (
+            {mappedSports && mappedSports.length > 0 && (
               <div className="home__sports-news">
                 <div className="home__title-container">
                   <Link href="/category/sports" className="home__title-link">
@@ -172,7 +172,7 @@ async function Home() {
                 </div>
               </div>
             )}
-            {mappedCulture && mappedCulture.length === 4 && (
+            {mappedCulture && mappedCulture.length > 0 && (
               <div className="home__culture-news">
                 <div className="home__title-container">
                   <Link href="/category/culture" className="home__title-link">

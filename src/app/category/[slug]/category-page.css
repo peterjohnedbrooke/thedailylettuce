@@ -1,0 +1,21 @@
+.category-page__article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-medium);
+  margin-bottom: var(--padding-medium);
+}
+
+.category-page__card-feature {
+}
+
+.category-page__card-row {
+  display: flex;
+  width: 100%;
+  gap: var(--padding-medium);
+
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--padding-medium);
+  }
+}
