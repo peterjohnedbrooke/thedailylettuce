@@ -21,10 +21,8 @@ const ContactPage = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send data to an API
     console.log('Form data submitted:', formData);
     alert('Thank you for contacting us!');
-    // Reset form after submission
     setFormData({
       name: '',
       email: '',
