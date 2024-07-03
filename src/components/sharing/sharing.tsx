@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Icon from '../icon/icon';
 import './sharing.css';
@@ -38,13 +37,13 @@ const Sharing = () => {
         {defaultOptions.map((option, index) => (
           <button
             key={index}
-            onClick={() =>
-              window.open(
-                option.url + encodeURIComponent(document.location.href),
-                `${option.title}-share-dialog`,
-                'width=800,height=600',
-              )
-            }
+            // onClick={() =>
+            //   window.open(
+            //     option.url + encodeURIComponent(document.location.href),
+            //     `${option.title}-share-dialog`,
+            //     'width=800,height=600',
+            //   )
+            // }
           >
             <Icon icon={option.icon as keyof typeof icons} size={24} />
           </button>
