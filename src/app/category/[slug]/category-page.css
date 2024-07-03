@@ -8,12 +8,16 @@
 .category-page__card-feature {
 }
 
-.category-page__card-row {
-  display: flex;
-  width: 100%;
-  gap: var(--padding-medium);
+@media (max-width: 900px) {
+  .category-page__card-row {
+    display: flex;
+    width: 100%;
+    gap: var(--padding-medium);
+  }
+}
 
-  @media (min-width: 900px) {
+@media (min-width: 900px) {
+  .category-page__card-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--padding-medium);
